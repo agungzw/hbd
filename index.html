@@ -137,13 +137,13 @@
         var isOn = false;
 
         function playMusic() {
-          const audio = document.getElementById("bg-music");
-          audio.currentTime = 28;
+          const audio1 = document.getElementById("bg-music");
+          audio1.currentTime = 28;
           if (isOn == false) {
-            audio.play();
+            audio1.play();
             isOn = true;
           } else {
-            audio.pause();
+            audio1.pause();
             isOn = false;
           }
         }
