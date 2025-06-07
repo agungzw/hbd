@@ -149,6 +149,7 @@
         }
 
         const audio = document.getElementById("bg-music");
+        audio.currentTime = 28;
         audio.play().catch(() => {
           console.log(
             "Autoplay gagal, browser mungkin blokir tanpa interaksi user."
