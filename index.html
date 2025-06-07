@@ -138,6 +138,7 @@
 
         function playMusic() {
           const audio1 = document.getElementById("bg-music");
+          audio1.currentTime = 28;
           if (isOn == false) {
             audio1.play();
             isOn = true;
@@ -147,8 +148,9 @@
           }
         }
 
-        const audio = document.getElementById("bg-music");
-        audio.play().catch(() => {
+        const audio2 = document.getElementById("bg-music");
+        audio2.currentTime = 28;
+        audio2.play().catch(() => {
           console.log(
             "Autoplay gagal, browser mungkin blokir tanpa interaksi user."
           );
